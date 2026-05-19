@@ -1,0 +1,93 @@
+BASIC / INFORMASI
+---------------------------------------------------
+| Fungsi                    | Command             |
+| ------------------------- | ------------------- |
+| Cek versi Git             | `git --version`     |
+| Cek status project        | `git status`        |
+| Lihat riwayat commit      | `git log`           |
+| Riwayat singkat           | `git log --oneline` |
+| Lihat perbedaan perubahan | `git diff`          |
+---------------------------------------------------
+SETUP AWAL / CONFIG
+------------------------------------------------------------------------------
+| Fungsi                | Command                                            |
+| --------------------- | -------------------------------------------------- |
+| Inisialisasi Git      | `git init`                                         |
+| Set nama user         | `git config --global user.name "Nama"`             |
+| Set email user        | `git config --global user.email "email@gmail.com"` |
+| Lihat semua config    | `git config --list`                                |
+| Cek credential helper | `git config --global credential.helper`            |
+------------------------------------------------------------------------------
+STAGING & COMMIT
+-----------------------------------------------------
+| Fungsi                | Command                   |
+| --------------------- | ------------------------- |
+| Tambah semua file     | `git add .`               |
+| Tambah file tertentu  | `git add namafile`        |
+| Commit perubahan      | `git commit -m "pesan"`   |
+| Batalkan staging file | `git reset namafile`      |
+| Undo commit terakhir  | `git reset --soft HEAD~1` |
+| Reset total perubahan | `git reset --hard HEAD`   |
+-----------------------------------------------------
+REMOTE / GITHUB
+-------------------------------------------------------
+| Fungsi            | Command                         |
+| ----------------- | ------------------------------- |
+| Cek remote        | `git remote -v`                 |
+| Lihat nama remote | `git remote`                    |
+| Tambah origin     | `git remote add origin URL`     |
+| Ganti origin      | `git remote set-url origin URL` |
+| Hapus origin      | `git remote remove origin`      |
+| Detail remote     | `git remote show origin`        |
+-------------------------------------------------------
+PUSH & PULL
+-----------------------------------------------------
+| Fungsi                | Command                   |
+| --------------------- | ------------------------- |
+| Push pertama kali     | `git push -u origin main` |
+| Push biasa            | `git push`                |
+| Paksa push            | `git push --force`        |
+| Pull update repo      | `git pull`                |
+| Fetch update repo     | `git fetch`               |
+| Clone repository      | `git clone URL`           |
+| Clone branch tertentu | `git clone -b branch URL` |
+-----------------------------------------------------
+BRANCH
+--------------------------------------------------------
+| Fungsi               | Command                       |
+| -------------------- | ----------------------------- |
+| Lihat branch         | `git branch`                  |
+| Lihat semua branch   | `git branch -a`               |
+| Buat branch          | `git branch nama_branch`      |
+| Rename branch        | `git branch -m nama_baru`     |
+| Rename jadi main     | `git branch -M main`          |
+| Hapus branch         | `git branch -d nama_branch`   |
+| Paksa hapus branch   | `git branch -D nama_branch`   |
+| Pindah branch        | `git checkout nama_branch`    |
+| Buat + pindah branch | `git checkout -b nama_branch` |
+| Merge branch         | `git merge nama_branch`       |
+--------------------------------------------------------
+STASH / SIMPAN SEMENTARA
+-------------------------------------------------
+| Fungsi                     | Command          |
+| -------------------------- | ---------------- |
+| Simpan perubahan sementara | `git stash`      |
+| Kembalikan stash           | `git stash pop`  |
+| Lihat daftar stash         | `git stash list` |
+-------------------------------------------------
+PEMBATALAN / RESTORE
+------------------------------------------------------------
+| Fungsi                      | Command                    |
+| --------------------------- | -------------------------- |
+| Batalkan perubahan file     | `git checkout -- namafile` |
+| Reset file staging          | `git reset namafile`       |
+| Undo commit                 | `git reset --soft HEAD~1`  |
+| Hapus semua perubahan lokal | `git reset --hard HEAD`    |
+------------------------------------------------------------
+FILE KHUSUS
+---------------------------------------
+| Fungsi               | File         |
+| -------------------- | ------------ |
+| Ignore file/folder   | `.gitignore` |
+| Simpan folder kosong | `.gitkeep`   |
+---------------------------------------
