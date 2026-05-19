@@ -11,12 +11,12 @@ dan hal-hal yang saya pelajari selama proses belajar dan pengembangan project.
 * Knowledge base pribadi
 
 # 🧠 Topik Pembelajaran
-   ## 💻 Programming
-   ## 🗄️ Database
-   ## 🌐 Version Control
-   ## 🖼️ Image Processing
-   ## 📊 Research & Experiment
-   ## ⚙️ Tools & Environment
+    💻 Programming 
+    🗄️ Database
+    🌐 Version Control
+    🖼️ Image Processing
+    📊 Research & Experiment
+    ⚙️ Tools & Environment
 
 # 🔥 Goals
 * Konsisten mendokumentasikan ilmu
