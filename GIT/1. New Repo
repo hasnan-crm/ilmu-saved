@@ -1,0 +1,21 @@
+1. Masuk ke folder project, Contoh: D:\ProjectVB\Kasir
+2. Klik kanan folder → Open Git Bash Here
+3. didalamnya jalankan :
+   - git init 
+   - git add .
+   - git commit -m "first upload"
+4. Kalau error nama/email:
+   - git config --global user.name "Nama Kamu"
+   - git config --global user.email "email@gmail.com"
+5. Lalu ulangi commit:
+   - git commit -m "first upload"
+6. Sambungkan ke repository GitHub
+   - git remote add origin https://github.com/USERNAME/NAMA_REPO.git
+6. Upload ke GitHub
+   - git push -u origin master / git push -u origin main
+7. Login GitHub supaya bisa push ke folder tujuan
+8. Setelah itu kalau update file
+   Cukup:
+         git add .
+         git commit -m "update"
+         git push
