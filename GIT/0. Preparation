@@ -1,0 +1,22 @@
+PREPARATION SEBELUM MULAI PAKAI GIT
+---------------------------------------------------------------------------
+| Kebutuhan                         | Penjelasan                          |
+| --------------------------------- | ----------------------------------- |
+| Install Git                       | Wajib install Git di Windows        |
+| Punya akun GitHub                 | Untuk simpan repository online      |
+| Login GitHub                      | Bisa via Google                     |
+| Folder project sudah ada          | Folder kerjaan lokal                |
+| Internet                          | Dibutuhkan untuk push/pull          |
+| Git Credential Manager            | Supaya login browser otomatis       |
+| Tentukan repo Public/Private      | Public = semua bisa lihat           |
+| Tentukan nama repository          | Biasanya sesuai nama project        |
+| Buat `.gitignore`                 | Agar file build/cache tidak ikut    |
+| Tentukan branch utama             | Umumnya `main`                      |
+| Set identitas Git                 | `user.name` dan `user.email`        |
+| Pastikan folder benar             | Jangan salah folder saat `git init` |
+| Cek apakah sudah repo Git         | Lihat ada folder `.git` atau tidak  |
+| Siapkan commit message            | Contoh: `"first upload"`            |
+| Pastikan file sensitif tidak ikut | API key, password, dll              |
+| Pastikan ukuran file aman         | GitHub ada limit file besar         |
+| Pahami workflow dasar             | add → commit → push                 |
+---------------------------------------------------------------------------
