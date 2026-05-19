@@ -77,34 +77,4 @@ Contoh IGNORE
 | Ignore semua kecuali folder tertentu | `*` lalu `!src/`          | Hanya src yang di-track         |
 ------------------------------------------------------------------------------------------------------
 
-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 
-Contoh .gitignore Lengkap VB.NET
----------------------------------
-# Visual Studio
-.vs/
-bin/
-obj/
-packages/
-*.user
-
-# Logs
-*.log
-
-# Temporary
-*.tmp
-*.cache
-
-# Database
-*.mdf
-*.ldf
-
-# Environment
-.env
-
-# Backup
-Backup/
-
-# Keep README
-!README.md
----------------------------------
