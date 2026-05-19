@@ -1,0 +1,110 @@
+REPOSITORY BARU (MASIH KOSONG)
+----------------------------------------------------------------------------------
+| Step | Command / Aksi                 | Keterangan                             |
+| ---- | ------------------------------ | -------------------------------------- |
+| 1    | Buat `.gitignore`              | Buat file `.gitignore` di root project |
+| 2    | Isi `.gitignore`               | Contoh: `.vs/`, `bin/`, `obj/`         |
+| 3    | `git init`                     | Inisialisasi Git                       |
+| 4    | `git add .`                    | Tambahkan semua file                   |
+| 5    | `git commit -m "first upload"` | Commit pertama                         |
+| 6    | `git remote add origin URL`    | Hubungkan ke GitHub                    |
+| 7    | `git push -u origin main`      | Upload pertama                         |
+----------------------------------------------------------------------------------
+CONTOH .gitignore VB.NET
+    .vs/
+    bin/
+    obj/
+    packages/
+    *.user
+
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+
+REPOSITORY YANG SUDAH ADA ISINYA
+-------------------------------------------------------------------------------------------------
+| Step | Command / Aksi                     | Keterangan                                         |
+| ---- | ---------------------------------- | -------------------------------------------------- |
+| 1    | Buat/Edit `.gitignore`             | Tambahkan file/folder yang ingin di-ignore         |
+| 2    | `git rm -r --cached namafolder`    | Hapus tracking Git jika file sudah terlanjur masuk |
+| 3    | `git add .`                        | Refresh staging                                    |
+| 4    | `git commit -m "update gitignore"` | Simpan perubahan                                   |
+| 5    | `git push`                         | Upload perubahan                                   |
+-------------------------------------------------------------------------------------------------
+CONTOH HAPUS TRACKING
+| Kasus                        | Command                    |
+| ---------------------------- | -------------------------- |
+| Hapus tracking folder `bin`  | `git rm -r --cached bin`   |
+| Hapus tracking folder `.vs`  | `git rm -r --cached .vs`   |
+| Hapus tracking file tertentu | `git rm --cached namafile` |
+
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+
+Contoh IGNORE
+------------------------------------------------------------------------------------------------------
+| Yang Di-ignore                       | Penulisan di `.gitignore` | Fungsi                          |
+| ------------------------------------ | ------------------------- | ------------------------------- |
+| Folder `bin`                         | `bin/`                    | Ignore folder `bin`             |
+| Folder `.vs`                         | `.vs/`                    | Ignore folder Visual Studio     |
+| Folder `obj`                         | `obj/`                    | Ignore folder build             |
+| Semua folder `bin` dimanapun         | `**/bin/`                 | Ignore semua `bin` di subfolder |
+| File tertentu                        | `appsettings.json`        | Ignore 1 file spesifik          |
+| File di folder tertentu              | `config/app.json`         | Ignore file pada path tertentu  |
+| Semua file `.log`                    | `*.log`                   | Ignore semua file log           |
+| Semua file `.txt`                    | `*.txt`                   | Ignore semua file txt           |
+| Semua file `.user`                   | `*.user`                  | Ignore file user Visual Studio  |
+| Semua file `.exe`                    | `*.exe`                   | Ignore file executable          |
+| Semua file `.dll`                    | `*.dll`                   | Ignore file library             |
+| Semua file `.cache`                  | `*.cache`                 | Ignore cache                    |
+| Semua file `.tmp`                    | `*.tmp`                   | Ignore file sementara           |
+| Semua file dengan nama tertentu      | `secret.key`              | Ignore file bernama itu         |
+| Semua isi folder                     | `Logs/*`                  | Ignore isi folder Logs          |
+| Ignore folder tapi bukan foldernya   | `Logs/*`                  | Folder tetap ada, isi di-ignore |
+| Ignore folder dan seluruh isi        | `Logs/`                   | Folder + isi di-ignore          |
+| Ignore semua file dalam subfolder    | `temp/**/*`               | Ignore semua isi rekursif       |
+| Ignore berdasarkan nama awal         | `temp*`                   | Semua file/folder awalan temp   |
+| Ignore berdasarkan nama akhir        | `*backup`                 | Semua akhiran backup            |
+| Ignore semua                         | `*`                       | Ignore semua file               |
+| Kecualikan file tertentu             | `!README.md`              | README tetap ikut               |
+| Kecualikan file dalam folder ignore  | `!Logs/keep.txt`          | File tertentu tetap di-track    |
+| Ignore hidden file                   | `.env`                    | Ignore file env                 |
+| Ignore semua `.env`                  | `*.env`                   | Ignore semua env                |
+| Ignore database lokal                | `*.mdf`                   | SQL Server local db             |
+| Ignore SQLite                        | `*.sqlite`                | File SQLite                     |
+| Ignore ZIP                           | `*.zip`                   | File archive                    |
+| Ignore image tertentu                | `*.psd`                   | File Photoshop                  |
+| Ignore video                         | `*.mp4`                   | File video                      |
+| Ignore seluruh drive/path tertentu   | `/Backup/`                | Folder spesifik root project    |
+| Ignore file hanya di root            | `/config.json`            | Hanya root, bukan subfolder     |
+| Ignore semua kecuali folder tertentu | `*` lalu `!src/`          | Hanya src yang di-track         |
+------------------------------------------------------------------------------------------------------
+
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+
+Contoh .gitignore Lengkap VB.NET
+---------------------------------
+# Visual Studio
+.vs/
+bin/
+obj/
+packages/
+*.user
+
+# Logs
+*.log
+
+# Temporary
+*.tmp
+*.cache
+
+# Database
+*.mdf
+*.ldf
+
+# Environment
+.env
+
+# Backup
+Backup/
+
+# Keep README
+!README.md
+---------------------------------
