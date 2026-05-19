@@ -1,0 +1,19 @@
+Upload pertama kali
+-------------------
+  git init
+  git add .
+  git commit -m "first upload"
+  git remote add origin URL
+  git push -u origin main
+
+Update project
+-------------------
+  git add .
+  git commit -m "update"
+  git push
+
+Ambil update terbaru
+-------------------
+  git pull
+
+
